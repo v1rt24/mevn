@@ -1,0 +1,6 @@
+{
+  "port": 3000,
+  "jwtSecret": "v1rt24",
+  "mongoUri": "mongodb+srv://v1rt24:eMBO4cQabFFPd9WW@cluster0.wudne.mongodb.net/app?retryWrites=true&w=majority",
+  "baseUrl": "http://localhost:3000"
+}
