@@ -16,6 +16,7 @@ app.use('/api/link', require('./routes/link.routes'));
 app.use('/t', require('./routes/redirect.routes'));
 // /Подключение маршрутов
 
+// Для запуска готового проекта при запуске сервера командой "start"
 if (process.env.NODE_ENV === 'production') {
   app.use('/', express.static(path.join(__dirname, 'client', 'dist')));
 
@@ -23,6 +24,7 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html'));
   });
 }
+// /Для запуска готового проекта при запуске сервера командой "start"
 
 const PORT = config.get('port') || 3000;
 
